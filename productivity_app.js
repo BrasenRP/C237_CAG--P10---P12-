@@ -36,7 +36,7 @@ prodapp.get("/", (rq, res) => {
             console.error("Database query error:", err.message);
             return res.status(500).send("ERROR Retreiving data");
         }
-        res.render("calendar", {events: data});
+        res.render("index", {events: data});
     });
 });
 
