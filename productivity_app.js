@@ -7,7 +7,7 @@ const connect = msql.createConnection({
     // user: "root",
     // database: "proddyapp",
     // password: "",
-    host: "alwaysdata.com",
+    host: "mysql-brasen.alwaysdata.net",
     user: "brasen",
     password: "C237W/MYSQLDATABASE",
     database: "brasen_proddyapp"
@@ -226,4 +226,4 @@ prodapp.get("/deleteReminder/:id", (rq, res) => {
 
 const port = process.env.PORT || 3000;
 
-prodapp.listen(port, () => console.log(`Server running on port ${port}`));
+prodapp.listen(port, () => console.log(`Server running on ${port}`));
